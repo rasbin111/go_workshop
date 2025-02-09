@@ -2,7 +2,7 @@ package main
 
 import (
 	"errors"
-	"fmt"
+	// "fmt"
 	// "os"
 )
 
@@ -53,7 +53,7 @@ func divAndRemainder(num, denom int) (int, int, error){
     return num /denom, num % denom, nil
 }
 
-func main(){
+func functionFunc(){
     // var div1 int = div(40, 20)
     // fmt.Println(div1)
     // fmt.Println(addTo(3, 10, 20, 30, 40))
