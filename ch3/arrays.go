@@ -6,7 +6,7 @@ import (
 
 func arrayFunc() {
 	var arr1 [3]int
-	var arr2 []int
+	var arr2 [5]int = [...]int{10, 20, 3, 40, 50}
 	var arr3 [3]int = [3]int{10, 20, 30}
 	var arr4 = [3]int{50, 60, 70}
 	var arr5 = [10]int{1: 11, 5: 55}
@@ -16,11 +16,14 @@ func arrayFunc() {
 
 	fmt.Println("arr1: ", arr1)
 	fmt.Println("arr2: ", arr2)
+	fmt.Printf("Type of arr2: %T\n", arr2)
 	fmt.Println("arr3: ", arr3)
 	fmt.Println("arr4: ", arr4)
 	fmt.Println("arr5: ", arr5)
 	fmt.Println("slice6: ", slice6)
+	fmt.Printf("Type of slice6: %T\n", slice6)
 	fmt.Println("arr7: ", arr7)
+	fmt.Printf("Type of arr7: %T\n", arr7)
 	fmt.Println("Len arr5: ", len(arr5))
 
 	// var compareArray = arr4 == arr5; // error as array of differnt size is considered different type in go

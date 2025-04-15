@@ -40,40 +40,39 @@ func sliceFunc() {
 	// clear(sl5)
 	// fmt.Println("sl5: ", sl5, len(sl5))
 
-    // zero length slice, it doesn't equal to nil
-    // var sl6 = [] int {};
-    // var sl7 [] int;
-    // var sl8 [] int;
-    // fmt.Println("zero length slice: ", sl6);
-    // fmt.Println(slices.Equal(sl6, sl7));
-    // fmt.Println(slices.Equal(sl8, sl7));
-    // fmt.Println(sl6 == nil); // false
-    // fmt.Println(sl7 == nil); // true
+	// zero length slice, it doesn't equal to nil
+	// var sl6 = [] int {};
+	// var sl7 [] int;
+	// var sl8 [] int;
+	// fmt.Println("zero length slice: ", sl6);
+	// fmt.Println(slices.Equal(sl6, sl7));
+	// fmt.Println(slices.Equal(sl8, sl7));
+	// fmt.Println(sl6 == nil); // false
+	// fmt.Println(sl7 == nil); // true
 
-    // slicing slices
-    // var sl9 = []string {"a", "b", "c", "d"};
-    // var sl10 = sl9[:2]
-    // var sl11 = sl9[1:3]
-    // var sl12 = sl9[:]
-    // sl9[0] = "A"
-    // sl12[1] = "B"
-    //
-    // fmt.Println(sl10)
-    // fmt.Println(sl11)
-    // fmt.Println(sl12)
+	// slicing slices
+	// var sl9 = []string {"a", "b", "c", "d"};
+	// var sl10 = sl9[:2]
+	// var sl11 = sl9[1:3]
+	// var sl12 = sl9[:]
+	// sl9[0] = "A"
+	// sl12[1] = "B"
+	//
+	// fmt.Println(sl10)
+	// fmt.Println(sl11)
+	// fmt.Println(sl12)
 
-    // copy
-    // var sl13 = [] int {1, 2, 3}
-    // var sl14 = make ([] int, 5)
-    // num := copy(sl14, sl13)
-    // fmt.Println(num, sl14)
+	// copy
+	var sl13 = []int{1, 2, 3}
+	var sl14 = make([]int, 5)
+	num := copy(sl14, sl13)
+	fmt.Println(num, sl14)
 
-    var sl15 = [] int {10, 20, 30, 40, 50}
-    var sl16 = make([]int, 3)
-    num := copy(sl16, sl15[2:])
-    sl15[3] = 101
-    // num = copy(sl16[:2], sl15[1:])
-    fmt.Println(num, sl16)
-
+	var sl15 = []int{10, 20, 30, 40, 50}
+	var sl16 = make([]int, 3)
+	num2 := copy(sl16, sl15[2:])
+	sl15[3] = 101
+	// num = copy(sl16[:2], sl15[1:])
+	fmt.Println(num2, sl16)
 
 }
